@@ -1,0 +1,181 @@
+{
+ "case_id": "7205352d-9ee1-45c8-8ce5-ba96a597f9d7",
+ "case_title": "State v. Sharma",
+ "chronology": [
+  {
+   "date": "15.02.1995",
+   "event": "Late Jiwan Lal Sharma was admitted as a patient in a private ward of CMC Hospital, Ludhiana.",
+   "significance": "Establishes the commencement of the factual timeline leading to the alleged negligence.",
+   "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1"
+  },
+  {
+   "date": "22.02.1995",
+   "event": "At about 11\u202fp.m., Jiwan Lal experienced severe breathing difficulty; duty nurse called a doctor, but no doctor arrived for 20\u201125\u202fminutes; Dr. Jacob Mathew and Dr. Allen Joseph attended, connected an empty oxygen cylinder, and later a second cylinder was fetched but not made functional, resulting in the patient\u2019s death.",
+   "significance": "Core factual incident forming the basis of the FIR and the charge under Section\u202f304A IPC read with Section\u202f34.",
+   "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1"
+  },
+  {
+   "date": "18.12.2002",
+   "event": "The Punjab and Haryana High Court dismissed the petition under Section\u202f482 CrPC seeking quashment of the FIR and subsequent proceedings.",
+   "significance": "Shows that the High Court found the defence arguments insufficient to merit dismissal, allowing the criminal trial to proceed.",
+   "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 2"
+  },
+  {
+   "date": "24.01.2003",
+   "event": "Application for recalling the High Court order dated 18.12.2002 was dismissed.",
+   "significance": "Confirms the continuation of the criminal process without interruption, affecting limitation and procedural timelines.",
+   "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 2"
+  },
+  {
+   "date": "09.09.2004",
+   "event": "A two\u2011judge Bench of the Supreme Court expressed disagreement with the view in Dr\u202fSuresh\u202fGupta\u2019s case and ordered that the matter be considered by a three\u2011judge Bench.",
+   "significance": "Sets the procedural posture for the present appeal and indicates the Court\u2019s willingness to re\u2011examine the standard of criminal negligence for doctors.",
+   "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 2"
+  },
+  {
+   "date": "05.08.2005",
+   "event": "Supreme Court delivered its judgment in Jacob Mathew\u202fvs\u202fState of Punjab & Anr.",
+   "significance": "Final appellate authority on the interpretation of Section\u202f304A IPC in medical negligence cases, directly impacting the defence strategy.",
+   "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1"
+  }
+ ],
+ "cross_examination": [
+  {
+   "witness": "Vijay Sharma",
+   "role": "Complainant's elder brother / Witness",
+   "questions": [
+    {
+     "question": "You stated that you contacted the duty nurse when the patient felt difficulty in breathing, is it correct that no doctor turned up for about 20 to 25 minutes?",
+     "objective": "To establish the delay in medical response and challenge the narrative of immediate negligence by the specific accused doctors.",
+     "contradiction": "The FIR attributes death to 'carelessness of doctors' but the timeline shows a significant gap before the accused arrived.",
+     "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1"
+    },
+    {
+     "question": "Did you personally go to the adjoining room to bring a gas cylinder because the one in the room was empty?",
+     "objective": "To highlight that the immediate life-saving intervention was performed by a layperson (the witness) rather than the medical staff.",
+     "contradiction": "Suggests the medical staff failed in their primary duty to provide functional equipment, shifting blame from the doctors' clinical judgment to administrative failure.",
+     "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1"
+    },
+    {
+     "question": "Is it true that there was no arrangement to make the gas cylinder you brought functional, resulting in 5 to 7 minutes being wasted?",
+     "objective": "To demonstrate that the delay was due to lack of equipment/arrangement, not the specific act of the accused doctors.",
+     "contradiction": "The FIR claims death was due to 'carelessness of doctors', but the record shows the delay was due to the inability to connect the cylinder, a systemic issue.",
+     "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1"
+    }
+   ]
+  },
+  {
+   "witness": "Ashok Kumar Sharma",
+   "role": "Complainant / Informant",
+   "questions": [
+    {
+     "question": "You filed the FIR stating that the death occurred due to the 'carelessness of doctors and nurses', is it correct that the patient was admitted against the advice of the doctors?",
+     "objective": "To establish that the patient's condition was grave and that the admission was contrary to medical advice, weakening the claim of negligence in treatment.",
+     "contradiction": "The record states the disease had attained such gravity that peace could only be got at home, yet the complainant prevailed to get the patient admitted.",
+     "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 2"
+    },
+    {
+     "question": "Did you and your relations insist on the in-patient admission despite the doctors informing you that the disease was of such a nature that it required home care?",
+     "objective": "To show that the complainant's actions, not the doctors', contributed to the situation.",
+     "contradiction": "The complainant 'prevailed over the doctors' to admit the patient, suggesting the doctors' initial assessment was prudent.",
+     "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 2"
+    },
+    {
+     "question": "Is it true that the FIR states the death was due to the 'non availability of oxygen cylinder' and the 'empty cylinder was fixed on the mouth of my father'?",
+     "objective": "To pin the complainant to the specific factual allegation of equipment failure rather than clinical error.",
+     "contradiction": "The allegation focuses on the empty cylinder, which is a logistical failure, not necessarily a rash or negligent act by the doctor in terms of medical judgment.",
+     "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1"
+    }
+   ]
+  },
+  {
+   "witness": "Dr. Jacob Mathew",
+   "role": "Accused / Appellant",
+   "questions": [
+    {
+     "question": "You and Dr. Allen Joseph arrived at the patient's room after a delay of 20 to 25 minutes, is it correct that an oxygen cylinder was then brought and connected?",
+     "objective": "To confirm the timeline and the action taken by the accused upon arrival.",
+     "contradiction": "Establishes that the accused did take action, countering the claim of total inaction or carelessness.",
+     "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1"
+    },
+    {
+     "question": "Is it true that the oxygen cylinder you connected was found to be empty?",
+     "objective": "To establish that the failure was due to the state of the equipment, not the doctor's handling.",
+     "contradiction": "The doctor's act of connecting the cylinder was correct in principle, but the equipment was defective/empty.",
+     "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1"
+    },
+    {
+     "question": "Did you advise the patient to remain in the bed when he tried to get up?",
+     "objective": "To show that the medical staff was actively managing the patient's condition.",
+     "contradiction": "Contradicts the idea of 'carelessness' by showing active, albeit perhaps futile, medical management.",
+     "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1"
+    }
+   ]
+  },
+  {
+   "witness": "Dr. Allen Joseph",
+   "role": "Accused / Co-accused",
+   "questions": [
+    {
+     "question": "You arrived at the patient's room with Dr. Jacob Mathew, is it correct that you were present when the oxygen cylinder was connected?",
+     "objective": "To establish the presence of the second accused and their involvement in the immediate response.",
+     "contradiction": "Confirms the joint presence and action, relevant for the Section 34 IPC charge.",
+     "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1"
+    },
+    {
+     "question": "Is it true that the patient's breathing problem increased further after the oxygen cylinder was connected?",
+     "objective": "To highlight that the treatment did not work, potentially due to the empty cylinder or the severity of the disease.",
+     "contradiction": "Shows that the outcome was not due to a specific negligent act by the doctor, but the failure of the equipment or the disease progression.",
+     "source": "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1"
+    }
+   ]
+  }
+ ],
+ "synopsis": "# Executive Trial Synopsis\n\n## 1. Case Overview & Procedural History\n- The State has charged the accused under **Section 304A read with Section 34 IPC** for the death of Jiwan\u202fLal Sharma at CMC Hospital, Ludhiana (Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1).  The FIR alleges that an empty oxygen cylinder was attached to the victim, leading to his death (Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1).  The trial court framed charges, which were later challenged in a petition under **Section 482 CrPC** for quashing the FIR; the High Court dismissed the petition, holding that the defence could be raised at trial (Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 2).\n\n## 2. Applicable Statutory Framework\n- **Section 304A IPC** \u2013 criminal negligence causing death without any intention to cause death.\n- **Section 34 IPC** \u2013 acts done by several persons in furtherance of a common intention.\n- **Section 482 CrPC** \u2013 inherent powers of the High Court to quash criminal proceedings.\n- The Supreme Court in *Jacob\u202fMathew v. State of Punjab* clarified that for a doctor to be criminally liable under 304A, the prosecution must establish **rashness or negligence** beyond mere civil negligence, applying the **Bolam test** (Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 19\u201120).\n\n## 3. Case of the Other Side\n- The prosecution contends that the accused doctors\u2019 failure to provide functional oxygen constituted a **grossly negligent act** that directly caused the victim\u2019s death (Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1).  They rely on the FIR\u2019s allegation that the empty cylinder was \u201cfixed on the mouth\u201d and that the victim\u2019s breathing stopped as a result (Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1).\n\n## 4. Our Theory of the Case & Contradictions in the Record\n- The death resulted from **systemic hospital failures** \u2013 lack of a functional oxygen cylinder and delayed medical response \u2013 not from any **act or omission** attributable to the accused doctors (Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1\u20112).\n- The FIR does not allege any specific negligent act by the doctors; it merely blames \u201ccarelessness of doctors and nurses\u201d without detailing how the accused\u2019s conduct breached the standard of care (Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1).\n- Following *Jacob\u202fMathew*, the absence of a **competent medical opinion** applying the Bolam test makes the charge untenable (Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 19).\n\n## 5. Strengths\n- **Precedent**: *Jacob\u202fMathew* directly quashes prosecution of doctors where negligence is not \u201cgross\u201d or \u201crash\u201d (Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 20).\n- **Lack of Specific Allegation**: The FIR\u2019s generic language fails to satisfy the requirement of a *prima facie* case of criminal negligence (Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 1).\n- **Systemic Cause**: Evidence points to hospital\u2019s failure to maintain oxygen supply, a factor beyond the accused\u2019s control.\n\n## 6. Risks & Weaknesses\n- The prosecution may argue that the accused, being present, had a duty to ensure a functional cylinder and that their inaction amounted to rashness.\n- If the court accepts a broader interpretation of Section 34 IPC, it could attribute collective liability to the doctors.\n- Absence of an independent medical expert\u2019s opinion at the trial stage could be highlighted by the prosecution.\n\n## 7. Recommended Courtroom Strategy\n- **File a pre\u2011trial motion** invoking *Jacob\u202fMathew* to dismiss the charge for lack of criminal negligence, emphasizing the need for a Bolam\u2011test opinion (Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf, p. 19).\n- **Call an independent government\u2011qualified doctor** to testify that the alleged conduct does not meet the threshold of rashness or gross negligence.\n- **Highlight systemic failures** (oxygen supply, delayed response) and argue that liability, if any, lies with the hospital, not the individual doctors.\n- **Undermine Section 34** by showing absence of a common intention among the accused to cause death.\n- Prepare to counter any narrative of \u201ccarelessness\u201d with factual gaps in the FIR and lack of specific negligent acts.\n",
+ "related_precedents": [
+  {
+   "case_title": "Dr. Suresh Gupta v. Govt. of NCT of Delhi and Anr.",
+   "citation": "(2004) 6 SCC 422",
+   "court": "Supreme Court of India",
+   "ratio_decidendi": "Cited to show that the earlier two\u2011judge decision in Dr. Suresh Gupta\u2019s case was doubted and that the matter required consideration by a three\u2011judge bench.",
+   "source_document": "Cited in Jacob Mathew vs State Of Punjab & Anr.",
+   "page": 1
+  },
+  {
+   "case_title": "Dr. Laxman Balkrishna Joshi v. Dr. Trimbak Bapu Godbole and Anr.",
+   "citation": "(1969) 1 SCR 206",
+   "court": "Supreme Court of India",
+   "ratio_decidendi": "Held that a doctor who holds himself out as a medical advisor must possess the requisite knowledge, else he is prima facie negligent.",
+   "source_document": "Cited in Jacob Mathew vs State Of Punjab & Anr.",
+   "page": 1
+  },
+  {
+   "case_title": "Reg v. Idu Beg",
+   "citation": "(1881) 3 All. 776",
+   "court": "Allahabad High Court",
+   "ratio_decidendi": "Cited to state that negligence constituting an offence must be culpable or gross, not merely an error of judgment.",
+   "source_document": "Cited in Jacob Mathew vs State Of Punjab & Anr.",
+   "page": 1
+  },
+  {
+   "case_title": "Poonam Verma v. Ashwin Patel and Ors.",
+   "citation": "(1996) 4 SCC 332",
+   "court": "Supreme Court of India",
+   "ratio_decidendi": "Held that a homoeopath prescribing allopathic medicine and causing death is negligent and liable for compensation.",
+   "source_document": "Cited in Jacob Mathew vs State Of Punjab & Anr.",
+   "page": 1
+  },
+  {
+   "case_title": "R. v. Caldwell",
+   "citation": "1981(1) All ER 961",
+   "court": "English courts",
+   "ratio_decidendi": "Cited to reinforce the principle that criminal negligence must be distinguished from civil negligence.",
+   "source_document": "Cited in Jacob Mathew vs State Of Punjab & Anr.",
+   "page": 1
+  }
+ ],
+ "doc_count": 1,
+ "pages_indexed": 20,
+ "model": "openai/gpt-oss-120b, qwen/qwen3.8-27b",
+ "errors": []
+}

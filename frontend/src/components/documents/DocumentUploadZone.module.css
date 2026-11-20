@@ -1,0 +1,190 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* ── Drop Zone ──────────────────────────────────────────── */
+.dropZone {
+  border: 1.5px dashed var(--border-accent);
+  border-radius: var(--radius-xl);
+  padding: var(--space-12) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  cursor: pointer;
+  transition: border-color var(--transition-base), background var(--transition-base);
+  background: rgba(196, 146, 58, 0.02);
+  text-align: center;
+}
+
+.dropZone:hover {
+  border-color: var(--gold-dim);
+  background: rgba(196, 146, 58, 0.04);
+}
+
+.dropZoneDragging {
+  border-color: var(--gold) !important;
+  background: rgba(196, 146, 58, 0.07) !important;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.dropZoneIcon {
+  color: var(--gold-dim);
+  margin-bottom: var(--space-2);
+  transition: color var(--transition-base), transform var(--transition-base);
+}
+
+.dropZoneDragging .dropZoneIcon {
+  color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.dropZoneTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.dropZoneOr {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dropZoneHint {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: var(--space-2);
+}
+
+/* ── Upload List ────────────────────────────────────────── */
+.uploadList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* ── Upload Item ────────────────────────────────────────── */
+.uploadItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  animation: fadeIn 0.2s ease forwards;
+}
+
+.uploadItem_done {
+  border-color: rgba(61, 122, 79, 0.4);
+}
+
+.uploadItem_error {
+  border-color: rgba(122, 42, 42, 0.4);
+  background: var(--status-failed-bg);
+}
+
+.uploadItem_processing,
+.uploadItem_uploading {
+  border-color: var(--border-accent);
+}
+
+.uploadItemIcon {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.uploadItem_done .uploadItemIcon { color: #5da878; }
+.uploadItem_error .uploadItemIcon { color: #c45a5a; }
+
+.uploadItemBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.uploadItemTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+.uploadItemName {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.uploadItemRight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+.uploadItemSize {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.dismissBtn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0 2px;
+  transition: color var(--transition-fast);
+}
+
+.dismissBtn:hover { color: var(--text-secondary); }
+
+.uploadItemStatus {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.pageCount,
+.progressPct {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ── Error Details ──────────────────────────────────────── */
+.uploadError {
+  margin-top: var(--space-2);
+}
+
+.uploadErrorText {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: #c45a5a;
+  margin-bottom: var(--space-1);
+}
+
+.uploadErrorHints {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}

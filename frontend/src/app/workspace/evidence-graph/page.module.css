@@ -1,0 +1,60 @@
+/* ═══════════════════════════════════════════════════════════
+   EVIDENCE GRAPH PAGE - CSS Module
+   Two-panel layout: left case selector + right graph canvas
+═══════════════════════════════════════════════════════════ */
+
+.page { display:flex; flex-direction:column; height:100%; background:var(--bg-primary); overflow:hidden; }
+
+/* ── Page header ─────────────────────────────────────────── */
+.header { display:flex; align-items:center; justify-content:space-between; padding:var(--space-4) var(--space-6); background:var(--bg-secondary); border-bottom:1px solid var(--border); flex-shrink:0; gap:var(--space-4); }
+.headerLeft { display:flex; align-items:center; gap:var(--space-3); }
+.headerIcon { font-size:1.5rem; color:var(--gold); line-height:1; }
+.headerTitle { font-family:var(--font-display); font-size:1.125rem; font-weight:500; color:var(--text-primary); margin:0; }
+.headerSub { font-family:var(--font-body); font-size:0.75rem; color:var(--text-muted); margin:0; }
+
+/* ── Two-panel body ──────────────────────────────────────── */
+.body { display:flex; flex:1; overflow:hidden; }
+
+/* ── Left panel — Case list ──────────────────────────────── */
+.casePanel { width:272px; flex-shrink:0; border-right:1px solid var(--border); display:flex; flex-direction:column; background:var(--bg-secondary); overflow:hidden; }
+.casePanelHeader { padding:var(--space-3) var(--space-4); border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; flex-shrink:0; }
+.casePanelTitle { font-family:var(--font-body); font-size:0.6875rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); }
+.caseCount { font-family:var(--font-body); font-size:0.6875rem; color:var(--text-dim); background:var(--bg-elevated); border:1px solid var(--border); border-radius:99px; padding:1px 8px; }
+
+.caseList { flex:1; overflow-y:auto; padding:var(--space-2); display:flex; flex-direction:column; gap:var(--space-1); list-style:none; margin:0; }
+.caseList::-webkit-scrollbar { width:4px; }
+.caseList::-webkit-scrollbar-track { background:transparent; }
+.caseList::-webkit-scrollbar-thumb { background:var(--border); border-radius:4px; }
+
+/* ── Case Card ───────────────────────────────────────────── */
+.caseCard { width:100%; text-align:left; border:1px solid var(--border); border-radius:var(--radius-md); padding:var(--space-3); cursor:pointer; transition:all var(--transition-fast); background:var(--bg-surface); display:flex; flex-direction:column; gap:var(--space-1); position:relative; overflow:hidden; }
+.caseCard:hover { border-color:var(--border-accent); background:var(--bg-elevated); }
+.caseCardActive { border-color:var(--gold-dim) !important; background:var(--bg-elevated) !important; box-shadow:inset 3px 0 0 var(--gold-dim); }
+.caseCardActive .caseName { color:var(--gold) !important; }
+
+.caseName { font-family:var(--font-body); font-size:0.8125rem; font-weight:500; color:var(--text-primary); line-height:1.3; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.caseMeta { display:flex; align-items:center; gap:var(--space-2); flex-wrap:wrap; margin-top:2px; }
+.caseTypeBadge { font-family:var(--font-body); font-size:0.5875rem; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-muted); background:var(--bg-elevated); border:1px solid var(--border); border-radius:4px; padding:2px 5px; }
+.caseDocCount { font-family:var(--font-body); font-size:0.6875rem; color:var(--text-dim); display:flex; align-items:center; gap:4px; }
+.docDot { width:5px; height:5px; border-radius:50%; background:var(--text-dim); display:inline-block; flex-shrink:0; }
+.docDotReady { background:#3d7a4f; box-shadow:0 0 4px rgba(61,122,79,0.5); }
+
+/* Loading & empty states in case panel */
+.casePanelState { display:flex; flex-direction:column; align-items:center; justify-content:center; flex:1; gap:var(--space-3); padding:var(--space-6); text-align:center; }
+.casePanelStateIcon { font-size:2rem; color:var(--text-dim); }
+.casePanelStateText { font-family:var(--font-body); font-size:0.8125rem; color:var(--text-muted); line-height:1.5; }
+
+/* ── Right panel — Graph canvas ──────────────────────────── */
+.graphPanel { flex:1; overflow:hidden; display:flex; flex-direction:column; }
+
+/* ── Empty / select state for graph panel ────────────────── */
+.graphEmpty { display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; gap:var(--space-4); text-align:center; padding:var(--space-8); }
+.graphEmptyIcon { font-size:4rem; color:var(--text-dim); line-height:1; opacity:0.4; }
+.graphEmptyTitle { font-family:var(--font-display); font-size:1.25rem; font-weight:500; color:var(--text-secondary); margin:0; }
+.graphEmptyDesc { font-family:var(--font-body); font-size:0.875rem; color:var(--text-muted); max-width:360px; line-height:1.6; margin:0; }
+
+.arrowHint { font-size:1.75rem; color:var(--gold-dim); animation:bounceLeft 1.6s ease-in-out infinite; }
+@keyframes bounceLeft {
+  0%, 100% { transform:translateX(0); opacity:0.35; }
+  50% { transform:translateX(-10px); opacity:0.85; }
+}

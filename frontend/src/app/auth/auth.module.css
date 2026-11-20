@@ -1,0 +1,437 @@
+/* ═══════════════════════════════════════════════════════════
+   AUTH PAGE — CSS MODULE
+   Matches the Court Vision AI premium dark-gold design system
+═══════════════════════════════════════════════════════════ */
+
+/* ── Page Wrapper ─────────────────────────────────────────── */
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+/* ── Left Panel (Brand) ───────────────────────────────────── */
+.brandPanel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--space-10) var(--space-12);
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+}
+
+/* subtle radial glow behind the brand panel */
+.brandPanel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 80% 60% at 30% 60%,
+    rgba(196, 146, 58, 0.06) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.brandTop {
+  position: relative;
+  z-index: 1;
+}
+
+.brandLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: var(--space-20);
+}
+
+.brandLogoIcon {
+  font-size: 1.5rem;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.brandLogoText {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.brandHeading {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 3.5vw, 3.5rem);
+  font-weight: 500;
+  line-height: 1.12;
+  color: var(--text-primary);
+  margin-bottom: var(--space-5);
+  letter-spacing: -0.01em;
+}
+
+.brandHeading em {
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.brandSubtext {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 380px;
+}
+
+.brandBottom {
+  position: relative;
+  z-index: 1;
+}
+
+/* Stats row at the bottom of the brand panel */
+.brandStats {
+  display: flex;
+  gap: var(--space-8);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--border);
+}
+
+.brandStat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brandStatNumber {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.brandStatLabel {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Decorative SVG / legal ornament in the center of brand panel */
+.brandOrnament {
+  position: absolute;
+  bottom: 80px;
+  right: -60px;
+  width: 340px;
+  height: 340px;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+/* ── Right Panel (Form) ───────────────────────────────────── */
+.formPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-12) var(--space-10);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.formInner {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* ── Form Header ──────────────────────────────────────────── */
+.formHeader {
+  margin-bottom: var(--space-8);
+}
+
+.formEyebrow {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-3);
+}
+
+.formTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.15;
+  margin-bottom: var(--space-2);
+}
+
+.formSubtitle {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ── Divider ─────────────────────────────────────────────── */
+.divider {
+  width: 48px;
+  height: 1px;
+  background: var(--border-gold);
+  margin: var(--space-6) 0;
+}
+
+/* ── Form ────────────────────────────────────────────────── */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.formLabel {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.formInput {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  padding: 12px 16px;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  outline: none;
+}
+
+.formInput::placeholder {
+  color: var(--text-muted);
+}
+
+.formInput:focus {
+  border-color: var(--gold-dim);
+  box-shadow: 0 0 0 3px rgba(196, 146, 58, 0.1);
+  background: var(--bg-surface);
+}
+
+/* ── Submit Button ───────────────────────────────────────── */
+.submitBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  background: var(--gold);
+  color: #0d0c0a;
+  border: 1px solid var(--gold);
+  border-radius: var(--radius-md);
+  padding: 13px 24px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  margin-top: var(--space-2);
+  position: relative;
+  overflow: hidden;
+}
+
+.submitBtn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: var(--gold-bright);
+  border-color: var(--gold-bright);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(196, 146, 58, 0.35);
+}
+
+.submitBtn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Loading dots inside button */
+.loadingDots {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.loadingDots span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #0d0c0a;
+  animation: loadingDotPulse 1.2s ease-in-out infinite;
+}
+
+.loadingDots span:nth-child(2) { animation-delay: 0.2s; }
+.loadingDots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes loadingDotPulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50%       { opacity: 1;   transform: scale(1);   }
+}
+
+/* ── Alerts ──────────────────────────────────────────────── */
+.error {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  background: var(--status-failed-bg);
+  color: #c45a5a;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border: 1px solid var(--status-failed);
+  animation: scaleIn 0.2s ease forwards;
+}
+
+.success {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  background: var(--status-ready-bg);
+  color: #5da878;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border: 1px solid var(--status-ready);
+  animation: scaleIn 0.2s ease forwards;
+}
+
+/* ── Tab Switcher (Login / Register) ─────────────────────── */
+.tabSwitcher {
+  display: flex;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 4px;
+  margin-bottom: var(--space-6);
+}
+
+.tab {
+  flex: 1;
+  padding: 9px 16px;
+  background: none;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.tab:hover {
+  color: var(--text-secondary);
+}
+
+.tabActive {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border-accent);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ── Footer note under form ──────────────────────────────── */
+.formFooter {
+  margin-top: var(--space-6);
+  text-align: center;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border);
+}
+
+.formFooterText {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.formFooterText a {
+  color: var(--gold-dim);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.formFooterText a:hover {
+  color: var(--gold);
+}
+
+/* ── Disclaimer ──────────────────────────────────────────── */
+.disclaimer {
+  margin-top: var(--space-5);
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  color: var(--text-dim);
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+/* ── Animations ──────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .brandPanel {
+    display: none;
+  }
+
+  .formPanel {
+    padding: var(--space-10) var(--space-6);
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,74 @@
+[
+ {
+  "module": "Health",
+  "status": 200,
+  "latency_s": 0.03,
+  "ok": true,
+  "detail": "",
+  "sample": "{\"status\": \"ok\", \"app\": \"Court Vision AI\", \"version\": \"0.1.0\", \"environment\": \"development\", \"database\": \"connected\"}"
+ },
+ {
+  "module": "Case documents",
+  "status": 200,
+  "latency_s": 0.09,
+  "ok": true,
+  "detail": "",
+  "sample": "{\"documents\": [{\"id\": \"51031b11-8ba4-4c57-9f4f-b057fc66f002\", \"case_id\": \"7205352d-9ee1-45c8-8ce5-ba96a597f9d7\", \"original_name\": \"Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf\", \"mime_type\": \"application/pdf\", \"file_size\": 276924, \"page_count\": 20, \"status\": \"ready\", \"error_message\": "
+ },
+ {
+  "module": "Structured summary",
+  "status": 200,
+  "latency_s": 3.7,
+  "ok": true,
+  "detail": "",
+  "sample": "{\"overview\": \"The Supreme Court examined whether doctors can be criminally liable under Section 304A IPC for alleged medical negligence resulting in death, focusing on the standards of negligence and mens rea applicable to medical professionals.\", \"key_issues\": [\"Whether Section 304A requires only n"
+ },
+ {
+  "module": "Grounded chat",
+  "status": 200,
+  "latency_s": 1.43,
+  "ok": true,
+  "detail": "",
+  "sample": "{\"answer\": \"Based on the case documents provided, the patient was admitted to the following location:\\n\\n*   **Hospital:** **CMC Hospital**\\n*   **City:** **Ludhiana**\\n\\nThe patient, **Jiwan Lal Sharma**, was admitted as a patient in a private ward of this hospital on **15.2.1995**. *(Source: Jacob"
+ },
+ {
+  "module": "Evidence graph (cached)",
+  "status": 200,
+  "latency_s": 0.01,
+  "ok": true,
+  "detail": "",
+  "sample": "{\"nodes\": [{\"id\": \"jacob_mathew\", \"label\": \"Jacob Mathew\", \"type\": \"person\", \"description\": null, \"document_sources\": [\"Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf\"]}, {\"id\": \"state_of_punjab\", \"label\": \"State of Punjab\", \"type\": \"organization\", \"description\": null, \"document_sources"
+ },
+ {
+  "module": "Virtual courtroom turn",
+  "status": 200,
+  "latency_s": 2.59,
+  "ok": true,
+  "detail": "",
+  "sample": "{\"judge_response\": \"THE COURT: Counsel, you must substantiate that allegation with a specific reference to the record, citing the page or exhibit on which the empty cylinder is shown to be a hospital failure.\", \"opposing_response\": \"OPPOSING COUNSEL:\\u202fYour Lordship, the FIR itself (Exhibit\\u202f"
+ },
+ {
+  "module": "Courtroom verdict",
+  "status": 200,
+  "latency_s": 2.05,
+  "ok": true,
+  "detail": "",
+  "sample": "{\"verdict\": \"Not Guilty\", \"outcome\": \"Acquitted on Professional Negligence Standards\", \"reasoning\": \"The prosecution has failed to establish the requisite 'gross negligence' or 'recklessness' necessary to attract criminal liability under Section 304A of the Indian Penal Code. As established in the l"
+ },
+ {
+  "module": "Trial brief",
+  "status": 200,
+  "latency_s": 4.49,
+  "ok": false,
+  "detail": "",
+  "sample": "{\"case_id\": \"7205352d-9ee1-45c8-8ce5-ba96a597f9d7\", \"case_title\": \"State v. Sharma\", \"chronology\": [{\"date\": \"15 Feb 1995\", \"event\": \"Patient admitted to Christian Medical College & Hospital; prescribed intensive respiratory support.\", \"significance\": \"Initiation of doctor-patient relationship estab"
+ },
+ {
+  "module": "Precedent research",
+  "status": 200,
+  "latency_s": 4.8,
+  "ok": true,
+  "detail": "",
+  "sample": "{\"query\": \"criminal medical negligence Section 304A gross negligence\", \"key_principles\": [\"A simple lack of care, an error of judgment or an accident, is not of itself negligence on the part of the medical professional.\", \"To prosecute a medical professional under Section 304A IPC, negligence must b"
+ }
+]

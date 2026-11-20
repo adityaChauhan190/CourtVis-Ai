@@ -1,0 +1,888 @@
+/* ═══════════════════════════════════════════════════════════
+   VirtualCourtroom.module.css — Dramatic legal chamber UI
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Outer container ─────────────────────────────────────── */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: radial-gradient(ellipse at top, #120d04 0%, #090806 55%, #050403 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle courtroom wood-grain texture via CSS */
+.container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 120px,
+      rgba(196, 146, 58, 0.015) 120px,
+      rgba(196, 146, 58, 0.015) 121px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Landing / Pre-session screen ────────────────────────── */
+.landing {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  gap: 1.25rem;
+  overflow-y: auto;
+}
+
+.landingGavel {
+  font-size: 5rem;
+  filter: drop-shadow(0 0 32px rgba(196, 146, 58, 0.6));
+  animation: gavelPulse 3s ease-in-out infinite;
+}
+
+@keyframes gavelPulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 24px rgba(196, 146, 58, 0.5)); }
+  50%       { transform: scale(1.05); filter: drop-shadow(0 0 36px rgba(196, 146, 58, 0.8)); }
+}
+
+.landingTitle {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #e8d5a0;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 48px rgba(196, 146, 58, 0.5);
+  margin: 0;
+}
+
+.landingDesc {
+  color: var(--text-secondary);
+  max-width: 560px;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.landingRoles {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: rgba(196, 146, 58, 0.06);
+  border: 1px solid rgba(196, 146, 58, 0.15);
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem;
+  min-width: 110px;
+}
+
+.roleIcon { font-size: 1.5rem; }
+.roleName { font-size: 0.8rem; font-weight: 700; color: #e8d5a0; }
+.roleLabel { font-size: 0.7rem; color: var(--text-muted); }
+.roleVs { font-size: 1rem; color: var(--text-muted); font-style: italic; }
+
+.landingWarning {
+  background: rgba(196, 100, 58, 0.1);
+  border: 1px solid rgba(196, 100, 58, 0.25);
+  color: #e8a070;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  max-width: 440px;
+}
+
+.startBtn {
+  background: linear-gradient(135deg, #c4923a 0%, #8c6525 100%);
+  color: #1a1208;
+  border: none;
+  border-radius: 10px;
+  padding: 0.85rem 2.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px rgba(196, 146, 58, 0.35);
+}
+
+.startBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(196, 146, 58, 0.5);
+}
+
+.startBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.landingTips {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  max-width: 480px;
+  text-align: left;
+}
+
+.tipTitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.6rem;
+}
+
+.landingTips ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.8;
+}
+
+/* ── Active Session Header ───────────────────────────────── */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+  background: rgba(26, 18, 8, 0.95);
+  border-bottom: 1px solid rgba(196, 146, 58, 0.2);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.headerIcon {
+  font-size: 1.2rem;
+  color: #c4923a;
+  filter: drop-shadow(0 0 8px rgba(196, 146, 58, 0.6));
+}
+
+.headerTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e8d5a0;
+  margin: 0;
+}
+
+.headerSub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.phaseBar {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.phaseBtn {
+  background: transparent;
+  border: 1px solid rgba(196, 146, 58, 0.15);
+  color: var(--text-muted);
+  border-radius: 6px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.phaseBtn:hover:not(:disabled) {
+  background: rgba(196, 146, 58, 0.08);
+  color: #c4923a;
+}
+
+.phaseBtnActive {
+  background: rgba(196, 146, 58, 0.15) !important;
+  border-color: rgba(196, 146, 58, 0.5) !important;
+  color: #e8d5a0 !important;
+  font-weight: 700;
+}
+
+.phaseBtnDone {
+  opacity: 0.45;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.verdictBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, #6b1e2a 0%, #4a1018 100%);
+  color: #e8a0a0;
+  border: 1px solid rgba(107, 30, 42, 0.6);
+  border-radius: 7px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.verdictBtn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #8c2a3a 0%, #6b1e2a 100%);
+  box-shadow: 0 0 12px rgba(107, 30, 42, 0.5);
+}
+
+.verdictBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.newSessionBtn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--text-muted);
+  border-radius: 7px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.newSessionBtn:hover {
+  background: rgba(255,255,255,0.05);
+  color: var(--text-secondary);
+}
+
+/* ── Transcript ──────────────────────────────────────────── */
+.transcript {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.75rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  z-index: 1;
+  scroll-behavior: smooth;
+}
+
+.transcript::-webkit-scrollbar { width: 4px; }
+.transcript::-webkit-scrollbar-track { background: transparent; }
+.transcript::-webkit-scrollbar-thumb { background: rgba(196, 146, 58, 0.2); border-radius: 2px; }
+
+/* ── Individual turns ────────────────────────────────────── */
+.turn {
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  animation: fadeInUp 0.3s ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.turnHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.turnIcon { font-size: 1rem; }
+
+.turnLabel {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.turnTime {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.turnContent {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  white-space: pre-wrap;
+}
+
+/* Judge turn — dark gold */
+.turnJudge {
+  background: linear-gradient(135deg, rgba(196, 146, 58, 0.1) 0%, rgba(140, 101, 37, 0.06) 100%);
+  border: 1px solid rgba(196, 146, 58, 0.2);
+  border-left: 3px solid #c4923a;
+}
+
+.turnJudge .turnLabel { color: #c4923a; }
+.turnJudge .turnContent { color: #e8d5a0; }
+
+/* Opposing counsel turn — deep crimson */
+.turnOpposing {
+  background: linear-gradient(135deg, rgba(107, 30, 42, 0.12) 0%, rgba(74, 16, 24, 0.08) 100%);
+  border: 1px solid rgba(107, 30, 42, 0.25);
+  border-left: 3px solid #6b1e2a;
+}
+
+.turnOpposing .turnLabel { color: #c47a7a; }
+.turnOpposing .turnContent { color: #f0c8c8; }
+
+/* Lawyer turn — right-aligned, blue-grey */
+.turnLawyer {
+  background: linear-gradient(135deg, rgba(42, 90, 122, 0.15) 0%, rgba(26, 61, 86, 0.1) 100%);
+  border: 1px solid rgba(42, 90, 122, 0.25);
+  border-right: 3px solid #2a5a7a;
+  align-self: flex-end;
+  max-width: 80%;
+}
+
+.turnLawyer .turnLabel { color: #7ab8d8; }
+.turnLawyer .turnContent { color: #d8edf7; }
+.turnLawyer .turnHeader { flex-direction: row-reverse; }
+.turnLawyer .turnTime { margin-left: 0; margin-right: auto; }
+
+/* System message */
+.turnSystem {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0;
+  border-top: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  animation: fadeInUp 0.3s ease;
+}
+
+/* ── Deliberating spinner ─────────────────────────────────── */
+.deliberating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #c4923a;
+  font-size: 0.82rem;
+  padding: 0.5rem 0.75rem;
+  font-style: italic;
+  animation: fadeInUp 0.3s ease;
+}
+
+/* ── Objection log ───────────────────────────────────────── */
+.objectionLog {
+  position: absolute;
+  top: 4.5rem;
+  right: 0.75rem;
+  width: 200px;
+  background: rgba(26, 18, 8, 0.95);
+  border: 1px solid rgba(107, 30, 42, 0.4);
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.objectionLogTitle {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c47a7a;
+  margin-bottom: 0.4rem;
+}
+
+.objectionItem {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.3rem;
+  line-height: 1.4;
+  padding-left: 0.5rem;
+  border-left: 2px solid rgba(107, 30, 42, 0.4);
+}
+
+/* ── Verdict panel ───────────────────────────────────────── */
+.verdictPanel {
+  background: linear-gradient(135deg, rgba(196, 146, 58, 0.08) 0%, rgba(107, 30, 42, 0.08) 100%);
+  border: 2px solid rgba(196, 146, 58, 0.3);
+  border-radius: 14px;
+  padding: 2rem;
+  text-align: center;
+  animation: verdictReveal 0.6s ease;
+  box-shadow: 0 0 60px rgba(196, 146, 58, 0.12), inset 0 0 40px rgba(196, 146, 58, 0.04);
+}
+
+@keyframes verdictReveal {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.verdictGavel {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 20px rgba(196, 146, 58, 0.6));
+}
+
+.verdictLabel {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c4923a;
+  margin-bottom: 0.5rem;
+}
+
+.verdictText {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #e8d5a0;
+  margin: 0 0 0.5rem;
+  text-shadow: 0 0 24px rgba(196, 146, 58, 0.4);
+}
+
+.verdictOutcome {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+.verdictReasoning {
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.verdictReasoningTitle {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #c4923a;
+  margin-bottom: 0.5rem;
+}
+
+.verdictReasoningText {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.verdictFindings {
+  text-align: left;
+}
+
+.verdictFindingsTitle {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #c4923a;
+  margin-bottom: 0.5rem;
+}
+
+.verdictFindings ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.83rem;
+  line-height: 1.8;
+}
+
+/* ── Input area ──────────────────────────────────────────── */
+.inputArea {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid rgba(196, 146, 58, 0.15);
+  background: rgba(26, 18, 8, 0.95);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.inputRole {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.inputRoleLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #7ab8d8;
+  letter-spacing: 0.05em;
+}
+
+.inputPhaseLabel {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.inputRow {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.input {
+  flex: 1;
+  background: rgba(42, 90, 122, 0.08);
+  border: 1px solid rgba(42, 90, 122, 0.3);
+  border-radius: 9px;
+  color: #d8edf7;
+  font-size: 0.88rem;
+  padding: 0.65rem 0.9rem;
+  resize: none;
+  outline: none;
+  font-family: inherit;
+  line-height: 1.5;
+  transition: border-color 0.15s;
+}
+
+.input:focus {
+  border-color: rgba(42, 90, 122, 0.7);
+  box-shadow: 0 0 0 2px rgba(42, 90, 122, 0.12);
+}
+
+.input::placeholder {
+  color: rgba(216, 237, 247, 0.3);
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, #2a5a7a 0%, #1a3d56 100%);
+  color: #d8edf7;
+  border: 1px solid rgba(42, 90, 122, 0.4);
+  border-radius: 9px;
+  width: 44px;
+  height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #3a7a9a 0%, #2a5a7a 100%);
+  box-shadow: 0 0 12px rgba(42, 90, 122, 0.4);
+}
+
+.submitBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.inputHint {
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  margin-top: 0.35rem;
+}
+
+/* ── Session ended bar ───────────────────────────────────── */
+.sessionEndedBar {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  background: rgba(26, 18, 8, 0.95);
+  border-top: 1px solid rgba(196, 146, 58, 0.15);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  z-index: 2;
+  position: relative;
+}
+
+.restartLink {
+  background: none;
+  border: none;
+  color: #c4923a;
+  cursor: pointer;
+  font-size: 0.82rem;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.restartLink:hover { color: #e8d5a0; }
+
+/* ── Temperament Selector ────────────────────────────────── */
+.landingTemperament {
+  width: 100%;
+  margin: 1.5rem 0 1rem;
+  text-align: left;
+}
+
+.temperamentHeading {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c4923a;
+  margin-bottom: 0.75rem;
+}
+
+.temperamentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.temperamentCard {
+  background: rgba(28, 26, 23, 0.7);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.85rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.temperamentCard:hover {
+  border-color: var(--border-accent);
+  background: rgba(36, 33, 24, 0.9);
+}
+
+.temperamentCardActive {
+  background: rgba(196, 146, 58, 0.1) !important;
+  border-color: #c4923a !important;
+  box-shadow: 0 0 15px rgba(196, 146, 58, 0.15);
+}
+
+.temperamentCardTop {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.temperamentIcon {
+  font-size: 1rem;
+}
+
+.temperamentTitle {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.temperamentDesc {
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* ── Junior Lawyer Performance Scorecard ─────────────────── */
+.scorecardContainer {
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(196, 146, 58, 0.25);
+  text-align: left;
+}
+
+.scorecardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.scorecardBadge {
+  font-size: 0.625rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: #c4923a;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.scorecardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 0.25rem;
+}
+
+.scorecardSubtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.overallScoreCircle {
+  background: radial-gradient(circle, rgba(196, 146, 58, 0.2) 0%, rgba(20, 18, 16, 0.8) 100%);
+  border: 2px solid #c4923a;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(196, 146, 58, 0.25);
+}
+
+.overallScoreVal {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #f0e8d0;
+  line-height: 1;
+}
+
+.overallScoreTotal {
+  font-size: 0.625rem;
+  color: var(--text-secondary);
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.metricItem {
+  background: rgba(20, 18, 16, 0.6);
+  border: 1px solid rgba(46, 41, 34, 0.6);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+}
+
+.metricLabelRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+}
+
+.metricName {
+  font-weight: 500;
+}
+
+.metricValue {
+  font-weight: 700;
+  color: #c4923a;
+}
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #8c6525 0%, #c4923a 100%);
+  border-radius: 3px;
+  transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.feedbackColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.feedbackCol {
+  background: rgba(20, 18, 16, 0.5);
+  border: 1px solid rgba(46, 41, 34, 0.6);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem;
+}
+
+.feedbackHeading {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem;
+}
+
+.feedbackList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.feedbackList li {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  padding-left: 0.75rem;
+  position: relative;
+}
+
+.feedbackList li::before {
+  content: "•";
+  color: #c4923a;
+  position: absolute;
+  left: 0;
+}
+
+.mentorBox {
+  background: linear-gradient(135deg, rgba(196, 146, 58, 0.08) 0%, rgba(36, 33, 24, 0.4) 100%);
+  border: 1px solid rgba(196, 146, 58, 0.3);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.mentorIcon {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #c4923a;
+  display: block;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.04em;
+}
+
+.mentorQuote {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin: 0;
+}
+

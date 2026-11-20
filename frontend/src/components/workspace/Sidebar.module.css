@@ -1,0 +1,255 @@
+.sidebar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 50;
+  transition: width var(--transition-base);
+}
+
+/* ── Brand ──────────────────────────────────────────────── */
+.brand {
+  padding: var(--space-5) var(--space-5);
+  flex-shrink: 0;
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+}
+
+.brandIcon {
+  font-size: 1.25rem;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.brandName {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.brandSub {
+  font-family: var(--font-body);
+  font-size: 0.625rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-top: 2px;
+  text-transform: uppercase;
+}
+
+/* ── Divider ────────────────────────────────────────────── */
+.divider {
+  height: 1px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+/* ── Navigation ─────────────────────────────────────────── */
+.nav {
+  padding: var(--space-5) var(--space-3);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.navSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.navLabel {
+  font-family: var(--font-body);
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  padding: 0 var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 9px var(--space-3);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: background var(--transition-fast), color var(--transition-fast);
+  cursor: pointer;
+  position: relative;
+}
+
+.navItem:hover:not(.navItemDisabled) {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+.navItemActive {
+  background: rgba(196, 146, 58, 0.08) !important;
+  color: var(--gold) !important;
+  border: 1px solid rgba(196, 146, 58, 0.15);
+}
+
+.navItemDisabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.navIcon {
+  font-size: 1rem;
+  width: 18px;
+  text-align: center;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.navItemLabel {
+  flex: 1;
+}
+
+.comingSoonBadge {
+  font-size: 0.5625rem !important;
+  padding: 1px 5px !important;
+}
+
+/* ── Spacer ─────────────────────────────────────────────── */
+.spacer {
+  flex: 1;
+}
+
+/* ── User ───────────────────────────────────────────────── */
+.userSection {
+  padding: var(--space-4) var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.userAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--gold-faint);
+  border: 1px solid var(--border-gold);
+  color: var(--gold);
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0.04em;
+}
+
+.userInfo {
+  overflow: hidden;
+}
+
+.userName {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userRole {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* -- Collapse Button -------------------------------------- */
+.collapseBtn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: all var(--transition-fast);
+}
+
+.collapseBtn:hover {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+}
+
+/* -- Collapsed State overrides ----------------------------- */
+:global(body.sidebar-collapsed) {
+  --sidebar-width: 68px;
+}
+
+:global(body.sidebar-collapsed) .brandName,
+:global(body.sidebar-collapsed) .brandSub,
+:global(body.sidebar-collapsed) .navLabel,
+:global(body.sidebar-collapsed) .navItemLabel,
+:global(body.sidebar-collapsed) .comingSoonBadge,
+:global(body.sidebar-collapsed) .userInfo {
+  display: none;
+}
+
+:global(body.sidebar-collapsed) .brand {
+  padding: var(--space-5) 0;
+  display: flex;
+  justify-content: center;
+}
+
+:global(body.sidebar-collapsed) .brandLink {
+  justify-content: center;
+}
+
+:global(body.sidebar-collapsed) .nav {
+  padding: var(--space-5) 0;
+}
+
+:global(body.sidebar-collapsed) .navItem {
+  justify-content: center;
+  padding: 12px 0;
+}
+
+:global(body.sidebar-collapsed) .userSection {
+  justify-content: center;
+  padding: var(--space-4) 0;
+}
+

@@ -1,0 +1,345 @@
+Production context: 18004 chars | chunks: 91 | model: openai/gpt-oss-120b | max_tokens: 2048
+[S4_BM25_Extract] A01 On what date was Jiwan Lal Sharma admitted to the hospital?
+[S4_BM25_Extract] A02 In which hospital and city was the patient admitted?
+[S4_BM25_Extract] A03 Under which sections of the Indian Penal Code was the offence register
+[S4_BM25_Extract] A04 For how long did no doctor turn up after the duty nurse was contacted?
+[S4_BM25_Extract] A05 Which two doctors came to the patient's room?
+[S4_BM25_Extract] A06 What was found to be wrong with the oxygen cylinder connected to the p
+[S4_BM25_Extract] A07 How many minutes were wasted while trying to make the second gas cylin
+[S4_BM25_Extract] A08 On what date did the High Court dismiss the petition filed under Secti
+[S4_BM25_Extract] A09 On what date was the application for recalling the High Court's order 
+[S4_BM25_Extract] A10 The referring two-judge Bench doubted the correctness of which earlier
+[S4_BM25_Extract] A11 On what date did the two-judge Bench refer the matter to a three-judge
+[S4_BM25_Extract] A12 According to the appellant, what disease was the deceased suffering fr
+[S4_BM25_Extract] A13 Which body did the Supreme Court issue notice to so that it could assi
+[S4_BM25_Extract] A14 In Andrews v. Director of Public Prosecutions, which Law Lord said tha
+[S4_BM25_Extract] A15 What are the three essential components of negligence described in the
+[S4_BM25_Extract] A16 In which Supreme Court decision was the statement of law in Andrews ap
+[S4_BM25_Extract] B01 Which English case laid down the test for medical negligence that the 
+[S4_BM25_Extract] B02 According to the guidelines, what must a private complainant produce b
+[S4_BM25_Extract] B03 From whom should the investigating officer preferably obtain a medical
+[S4_BM25_Extract] B04 According to the conclusions, how must the expression 'rash or neglige
+[S4_BM25_Extract] B05 In Juggankhan v. State of Madhya Pradesh, what substances did the homo
+[S4_BM25_Extract] B06 In Achutrao Haribhau Khodwa v. State of Maharashtra, what was left ins
+[S4_BM25_Extract] B07 Which Privy Council case involved a doctor who administered an overdos
+[S4_BM25_Extract] B08 What was the final result of the appeals?
+[S4_BM25_Extract] B09 Which book by Alan Merry and Alexander McCall Smith does the Court rel
+[S4_BM25_Extract] B10 Which section of the IPC in the chapter on General Exceptions exempts 
+[S4_BM25_Extract] B11 Should a doctor accused of rashness or negligence be arrested in a rou
+[S4_BM25_Extract] B12 In Maynard v. West Midlands Regional Health Authority, which Law Lord 
+[S4_BM25_Extract] B13 Can a case under Section 304A IPC be decided solely by applying the ru
+[S4_BM25_Extract] B14 On the facts, what did the Court say was the probable cause of the pro
+[S4_BM25_Extract] C01 What was the name of the duty nurse who called the doctor?
+[S4_BM25_Extract] C02 What sentence of imprisonment did the trial court impose on Dr. Jacob 
+[S4_BM25_Extract] C03 How much compensation was awarded to Ashok Kumar Sharma?
+[S4_BM25_Extract] C04 What cause of death was recorded in the post-mortem report?
+[S4_BM25_Extract] C05 Which senior advocate argued the case for the appellant?
+[S4_BM25_Extract] C06 What was the name of the company that supplied the oxygen cylinders to
+[S4_BM25_Extract] C07 What was the room number of the private ward in which the patient was 
+[S4_BM25_Extract] C08 What was the age of Jiwan Lal Sharma at the time of his death?
+[S4_BM25_Extract] C09 What was the FIR number registered at Police Station Division No. 3, L
+[S4_BM25_Extract] C10 On what exact date was the FIR lodged by Ashok Kumar Sharma?
+[S4_BM25_Extract] C11 What disciplinary action did the Medical Council of India recommend ag
+[S4_BM25_Extract] C12 Which section of the Bharatiya Nyaya Sanhita, 2023 did the Court apply
+[S3_ClosedBook] A01 On what date was Jiwan Lal Sharma admitted to the hospital?
+[S3_ClosedBook] A02 In which hospital and city was the patient admitted?
+[S3_ClosedBook] A03 Under which sections of the Indian Penal Code was the offence register
+[S3_ClosedBook] A04 For how long did no doctor turn up after the duty nurse was contacted?
+[S3_ClosedBook] A05 Which two doctors came to the patient's room?
+[S3_ClosedBook] A06 What was found to be wrong with the oxygen cylinder connected to the p
+[S3_ClosedBook] A07 How many minutes were wasted while trying to make the second gas cylin
+[S3_ClosedBook] A08 On what date did the High Court dismiss the petition filed under Secti
+[S3_ClosedBook] A09 On what date was the application for recalling the High Court's order 
+[S3_ClosedBook] A10 The referring two-judge Bench doubted the correctness of which earlier
+[S3_ClosedBook] A11 On what date did the two-judge Bench refer the matter to a three-judge
+[S3_ClosedBook] A12 According to the appellant, what disease was the deceased suffering fr
+[S3_ClosedBook] A13 Which body did the Supreme Court issue notice to so that it could assi
+[S3_ClosedBook] A14 In Andrews v. Director of Public Prosecutions, which Law Lord said tha
+[S3_ClosedBook] A15 What are the three essential components of negligence described in the
+[S3_ClosedBook] A16 In which Supreme Court decision was the statement of law in Andrews ap
+[S3_ClosedBook] B01 Which English case laid down the test for medical negligence that the 
+[S3_ClosedBook] B02 According to the guidelines, what must a private complainant produce b
+[S3_ClosedBook] B03 From whom should the investigating officer preferably obtain a medical
+[S3_ClosedBook] B04 According to the conclusions, how must the expression 'rash or neglige
+[S3_ClosedBook] B05 In Juggankhan v. State of Madhya Pradesh, what substances did the homo
+[S3_ClosedBook] B06 In Achutrao Haribhau Khodwa v. State of Maharashtra, what was left ins
+    retry 1 after 2.3s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] B07 Which Privy Council case involved a doctor who administered an overdos
+    retry 1 after 2.4s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] B08 What was the final result of the appeals?
+    retry 1 after 4.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] B09 Which book by Alan Merry and Alexander McCall Smith does the Court rel
+    retry 1 after 5.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] B10 Which section of the IPC in the chapter on General Exceptions exempts 
+[S3_ClosedBook] B11 Should a doctor accused of rashness or negligence be arrested in a rou
+    retry 1 after 4.5s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] B12 In Maynard v. West Midlands Regional Health Authority, which Law Lord 
+[S3_ClosedBook] B13 Can a case under Section 304A IPC be decided solely by applying the ru
+    retry 1 after 3.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] B14 On the facts, what did the Court say was the probable cause of the pro
+    retry 1 after 7.9s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] C01 What was the name of the duty nurse who called the doctor?
+[S3_ClosedBook] C02 What sentence of imprisonment did the trial court impose on Dr. Jacob 
+    retry 1 after 5.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] C03 How much compensation was awarded to Ashok Kumar Sharma?
+[S3_ClosedBook] C04 What cause of death was recorded in the post-mortem report?
+    retry 1 after 6.4s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] C05 Which senior advocate argued the case for the appellant?
+    retry 1 after 3.5s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] C06 What was the name of the company that supplied the oxygen cylinders to
+    retry 1 after 1.9s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] C07 What was the room number of the private ward in which the patient was 
+    retry 1 after 1.7s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] C08 What was the age of Jiwan Lal Sharma at the time of his death?
+    retry 1 after 3.9s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] C09 What was the FIR number registered at Police Station Division No. 3, L
+[S3_ClosedBook] C10 On what exact date was the FIR lodged by Ashok Kumar Sharma?
+    retry 1 after 2.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] C11 What disciplinary action did the Medical Council of India recommend ag
+    retry 1 after 5.3s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S3_ClosedBook] C12 Which section of the Bharatiya Nyaya Sanhita, 2023 did the Court apply
+    retry 1 after 3.2s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A01 On what date was Jiwan Lal Sharma admitted to the hospital?
+    retry 1 after 12.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 3.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A02 In which hospital and city was the patient admitted?
+    retry 1 after 14.7s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A03 Under which sections of the Indian Penal Code was the offence register
+    retry 1 after 11.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 1.8s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A04 For how long did no doctor turn up after the duty nurse was contacted?
+    retry 1 after 13.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A05 Which two doctors came to the patient's room?
+    retry 1 after 13.8s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A06 What was found to be wrong with the oxygen cylinder connected to the p
+    retry 1 after 13.2s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 3.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A07 How many minutes were wasted while trying to make the second gas cylin
+    retry 1 after 10.9s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A08 On what date did the High Court dismiss the petition filed under Secti
+    retry 1 after 15.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A09 On what date was the application for recalling the High Court's order 
+    retry 1 after 14.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A10 The referring two-judge Bench doubted the correctness of which earlier
+    retry 1 after 13.4s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A11 On what date did the two-judge Bench refer the matter to a three-judge
+    retry 1 after 11.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A12 According to the appellant, what disease was the deceased suffering fr
+    retry 1 after 16.9s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A13 Which body did the Supreme Court issue notice to so that it could assi
+    retry 1 after 13.5s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A14 In Andrews v. Director of Public Prosecutions, which Law Lord said tha
+    retry 1 after 12.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A15 What are the three essential components of negligence described in the
+    retry 1 after 14.7s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] A16 In which Supreme Court decision was the statement of law in Andrews ap
+    retry 1 after 11.3s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 2.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B01 Which English case laid down the test for medical negligence that the 
+    retry 1 after 14.3s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B02 According to the guidelines, what must a private complainant produce b
+    retry 1 after 15.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B03 From whom should the investigating officer preferably obtain a medical
+    retry 1 after 13.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B04 According to the conclusions, how must the expression 'rash or neglige
+    retry 1 after 15.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B05 In Juggankhan v. State of Madhya Pradesh, what substances did the homo
+    retry 1 after 14.5s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B06 In Achutrao Haribhau Khodwa v. State of Maharashtra, what was left ins
+    retry 1 after 11.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 1.8s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B07 Which Privy Council case involved a doctor who administered an overdos
+    retry 1 after 15.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B08 What was the final result of the appeals?
+    retry 1 after 12.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B09 Which book by Alan Merry and Alexander McCall Smith does the Court rel
+    retry 1 after 11.7s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B10 Which section of the IPC in the chapter on General Exceptions exempts 
+    retry 1 after 13.8s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B11 Should a doctor accused of rashness or negligence be arrested in a rou
+    retry 1 after 11.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 1.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B12 In Maynard v. West Midlands Regional Health Authority, which Law Lord 
+    retry 1 after 14.4s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B13 Can a case under Section 304A IPC be decided solely by applying the ru
+    retry 1 after 15.4s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] B14 On the facts, what did the Court say was the probable cause of the pro
+    retry 1 after 13.7s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] C01 What was the name of the duty nurse who called the doctor?
+    retry 1 after 14.2s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 1.7s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] C02 What sentence of imprisonment did the trial court impose on Dr. Jacob 
+    retry 1 after 15.2s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] C03 How much compensation was awarded to Ashok Kumar Sharma?
+    retry 1 after 12.8s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 1.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] C04 What cause of death was recorded in the post-mortem report?
+    retry 1 after 12.3s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] C05 Which senior advocate argued the case for the appellant?
+    retry 1 after 15.3s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 20.0s: Connection error.
+[S2_CV_RAG] C06 What was the name of the company that supplied the oxygen cylinders to
+[S2_CV_RAG] C07 What was the room number of the private ward in which the patient was 
+[S2_CV_RAG] C08 What was the age of Jiwan Lal Sharma at the time of his death?
+    retry 1 after 2.8s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] C09 What was the FIR number registered at Police Station Division No. 3, L
+    retry 1 after 12.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] C10 On what exact date was the FIR lodged by Ashok Kumar Sharma?
+    retry 1 after 14.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] C11 What disciplinary action did the Medical Council of India recommend ag
+    retry 1 after 14.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S2_CV_RAG] C12 Which section of the Bharatiya Nyaya Sanhita, 2023 did the Court apply
+    retry 1 after 11.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 2.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A01 On what date was Jiwan Lal Sharma admitted to the hospital?
+    retry 1 after 34.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A02 In which hospital and city was the patient admitted?
+    retry 1 after 34.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A03 Under which sections of the Indian Penal Code was the offence register
+    retry 1 after 32.4s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A04 For how long did no doctor turn up after the duty nurse was contacted?
+    retry 1 after 33.9s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A05 Which two doctors came to the patient's room?
+    retry 1 after 35.8s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A06 What was found to be wrong with the oxygen cylinder connected to the p
+    retry 1 after 33.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A07 How many minutes were wasted while trying to make the second gas cylin
+    retry 1 after 34.2s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 2.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A08 On what date did the High Court dismiss the petition filed under Secti
+    retry 1 after 32.2s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A09 On what date was the application for recalling the High Court's order 
+    retry 1 after 37.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A10 The referring two-judge Bench doubted the correctness of which earlier
+    retry 1 after 33.4s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A11 On what date did the two-judge Bench refer the matter to a three-judge
+    retry 1 after 34.5s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A12 According to the appellant, what disease was the deceased suffering fr
+    retry 1 after 35.8s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A13 Which body did the Supreme Court issue notice to so that it could assi
+[S1_CV_Trunc] A14 In Andrews v. Director of Public Prosecutions, which Law Lord said tha
+    retry 1 after 1.8s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A15 What are the three essential components of negligence described in the
+    retry 1 after 2.4s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] A16 In which Supreme Court decision was the statement of law in Andrews ap
+    retry 1 after 36.3s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B01 Which English case laid down the test for medical negligence that the 
+    retry 1 after 34.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B02 According to the guidelines, what must a private complainant produce b
+    retry 1 after 36.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B03 From whom should the investigating officer preferably obtain a medical
+    retry 1 after 37.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B04 According to the conclusions, how must the expression 'rash or neglige
+    retry 1 after 5.7s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B05 In Juggankhan v. State of Madhya Pradesh, what substances did the homo
+    retry 1 after 4.2s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 2.2s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B06 In Achutrao Haribhau Khodwa v. State of Maharashtra, what was left ins
+    retry 1 after 33.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B07 Which Privy Council case involved a doctor who administered an overdos
+    retry 1 after 33.9s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B08 What was the final result of the appeals?
+    retry 1 after 3.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B09 Which book by Alan Merry and Alexander McCall Smith does the Court rel
+    retry 1 after 33.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B10 Which section of the IPC in the chapter on General Exceptions exempts 
+[S1_CV_Trunc] B11 Should a doctor accused of rashness or negligence be arrested in a rou
+    retry 1 after 59.8s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B12 In Maynard v. West Midlands Regional Health Authority, which Law Lord 
+    retry 1 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 3 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 4 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 5 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 6 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 7 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 8 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 9 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 10 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 11 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 12 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B13 Can a case under Section 304A IPC be decided solely by applying the ru
+    retry 1 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 3 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 4 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 5 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 6 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 7 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 8 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 9 after 36.1s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] B14 On the facts, what did the Court say was the probable cause of the pro
+    retry 1 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 3 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 4 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 5 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 6 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 7 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 8 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 9 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 10 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 11 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 12 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] C01 What was the name of the duty nurse who called the doctor?
+    retry 1 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 3 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 4 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 5 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 6 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 7 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 8 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 9 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 10 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 11 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 12 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] C02 What sentence of imprisonment did the trial court impose on Dr. Jacob 
+    retry 1 after 59.8s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] C03 How much compensation was awarded to Ashok Kumar Sharma?
+    retry 1 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 44.7s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 3 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 4 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 5 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 6 after 60.3s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+[S1_CV_Trunc] C04 What cause of death was recorded in the post-mortem report?
+    retry 1 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 2 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 3 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 4 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 5 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 6 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 7 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 8 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 9 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 10 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 11 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+    retry 12 after 20.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxbad
+Production context: 18004 chars | chunks: 91 | model: openai/gpt-oss-120b | max_tokens: 2048
+[S1_CV_Trunc] B12 In Maynard v. West Midlands Regional Health Authority, which Law Lord 
+[S1_CV_Trunc] B14 On the facts, what did the Court say was the probable cause of the pro
+    retry 1 after 12.5s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+[S1_CV_Trunc] C01 What was the name of the duty nurse who called the doctor?
+    retry 1 after 38.3s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+[S1_CV_Trunc] C04 What cause of death was recorded in the post-mortem report?
+    retry 1 after 31.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+[S1_CV_Trunc] C05 Which senior advocate argued the case for the appellant?
+    retry 1 after 40.5s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+[S1_CV_Trunc] C06 What was the name of the company that supplied the oxygen cylinders to
+    retry 1 after 28.3s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+    retry 2 after 5.6s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+[S1_CV_Trunc] C07 What was the room number of the private ward in which the patient was 
+    retry 1 after 28.5s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+[S1_CV_Trunc] C08 What was the age of Jiwan Lal Sharma at the time of his death?
+    retry 1 after 40.2s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+[S1_CV_Trunc] C09 What was the FIR number registered at Police Station Division No. 3, L
+    retry 1 after 29.0s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+    retry 2 after 4.9s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+[S1_CV_Trunc] C10 On what exact date was the FIR lodged by Ashok Kumar Sharma?
+    retry 1 after 29.4s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+[S1_CV_Trunc] C11 What disciplinary action did the Medical Council of India recommend ag
+    retry 1 after 39.9s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+[S1_CV_Trunc] C12 Which section of the Bharatiya Nyaya Sanhita, 2023 did the Court apply
+    retry 1 after 31.7s: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kxe15
+DONE

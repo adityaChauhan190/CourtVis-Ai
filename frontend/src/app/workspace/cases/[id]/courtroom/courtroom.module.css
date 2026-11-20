@@ -1,0 +1,136 @@
+/* ════════════════════════════════════════════════════════════════════
+   Dedicated Courtroom Page — Full-screen immersive layout
+   ════════════════════════════════════════════════════════════════════ */
+
+/* ── Page shell ─────────────────────────────────────────────────── */
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background: #080604;
+}
+
+/* ── Top navigation bar ─────────────────────────────────────────── */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  padding: 0 1.25rem;
+  background: rgba(26, 18, 8, 0.98);
+  border-bottom: 1px solid rgba(196, 146, 58, 0.18);
+  flex-shrink: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+  gap: 1rem;
+}
+
+/* Back link */
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(196, 146, 58, 0.7);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.backLink:hover {
+  color: #c4923a;
+}
+
+/* Centre branding */
+.navCenter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.navIcon {
+  font-size: 1.1rem;
+  color: #c4923a;
+  filter: drop-shadow(0 0 6px rgba(196, 146, 58, 0.6));
+}
+
+.navTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #e8d5a0;
+  letter-spacing: 0.03em;
+}
+
+.navCaseName {
+  font-size: 0.78rem;
+  color: rgba(196, 146, 58, 0.55);
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Right slot — doc count badge */
+.navRight {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.docBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  color: rgba(196, 146, 58, 0.6);
+  padding: 3px 10px;
+  border: 1px solid rgba(196, 146, 58, 0.15);
+  border-radius: 99px;
+  background: rgba(196, 146, 58, 0.05);
+}
+
+.docBadgeDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #3d7a4f;
+  box-shadow: 0 0 5px rgba(61, 122, 79, 0.7);
+}
+
+/* ── Courtroom fill area ─────────────────────────────────────────── */
+.courtroomWrapper {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── Loading state ────────────────────────────────────────────────── */
+.loadingState {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: rgba(196, 146, 58, 0.6);
+  font-size: 0.9rem;
+}
+
+/* ── Responsive ───────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .navCaseName {
+    display: none;
+  }
+
+  .nav {
+    padding: 0 0.75rem;
+  }
+}

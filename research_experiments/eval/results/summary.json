@@ -1,0 +1,1205 @@
+{
+ "systems": {
+  "S1_CV_Trunc": {
+   "n": 42,
+   "acc_answerable": [
+    0.7333333333333333,
+    0.5555169795568831,
+    0.8581750444608938
+   ],
+   "k_answerable": 22,
+   "n_answerable": 30,
+   "acc_A": [
+    1.0,
+    0.8063865817272802,
+    1
+   ],
+   "k_A": 16,
+   "n_A": 16,
+   "acc_B": [
+    0.42857142857142855,
+    0.21380509930400526,
+    0.6740973309713064
+   ],
+   "k_B": 6,
+   "n_B": 14,
+   "refusal_C": [
+    1.0,
+    0.7574992425007574,
+    1
+   ],
+   "k_C": 12,
+   "n_C": 12,
+   "hallucination_C": 0.0,
+   "wrong_answers": 1,
+   "false_abstain": 7,
+   "task_accuracy": [
+    0.8095238095238095,
+    0.6669893264500356,
+    0.9001811039014357
+   ],
+   "k_task": 34,
+   "confusion": {
+    "TP": 23,
+    "FN": 7,
+    "FP": 0,
+    "TN": 12
+   },
+   "decision_precision": 1.0,
+   "decision_recall": 0.7666666666666667,
+   "decision_f1": 0.8679245283018869,
+   "error_rate": 0.19047619047619047,
+   "latency_mean": 1.430595238095238,
+   "latency_sd": 0.5952458012277031,
+   "latency_median": 1.244,
+   "latency_p95": 2.745999999999999,
+   "prompt_tokens_mean": 4595.714285714285,
+   "completion_tokens_mean": 286.8333333333333,
+   "context_chars_mean": 18004,
+   "acc_B_strict": [
+    0.3,
+    0.10778928748621183,
+    0.6032267800204347
+   ],
+   "k_B_strict": 3,
+   "n_B_strict": 10
+  },
+  "S2_CV_RAG": {
+   "n": 42,
+   "acc_answerable": [
+    1.0,
+    0.8864829086095221,
+    1
+   ],
+   "k_answerable": 30,
+   "n_answerable": 30,
+   "acc_A": [
+    1.0,
+    0.8063865817272802,
+    1
+   ],
+   "k_A": 16,
+   "n_A": 16,
+   "acc_B": [
+    1.0,
+    0.7846829880728186,
+    1
+   ],
+   "k_B": 14,
+   "n_B": 14,
+   "refusal_C": [
+    1.0,
+    0.7574992425007574,
+    1
+   ],
+   "k_C": 12,
+   "n_C": 12,
+   "hallucination_C": 0.0,
+   "wrong_answers": 0,
+   "false_abstain": 0,
+   "task_accuracy": [
+    1.0,
+    0.9161983874908382,
+    1
+   ],
+   "k_task": 42,
+   "confusion": {
+    "TP": 30,
+    "FN": 0,
+    "FP": 0,
+    "TN": 12
+   },
+   "decision_precision": 1.0,
+   "decision_recall": 1.0,
+   "decision_f1": 1.0,
+   "error_rate": 0.0,
+   "latency_mean": 1.0722142857142858,
+   "latency_sd": 0.22278936083919243,
+   "latency_median": 0.9984999999999999,
+   "latency_p95": 1.4486999999999999,
+   "prompt_tokens_mean": 1828.6904761904761,
+   "completion_tokens_mean": 186.66666666666666,
+   "context_chars_mean": 5619.452380952381,
+   "acc_B_strict": [
+    1.0,
+    0.7224598312333834,
+    1
+   ],
+   "k_B_strict": 10,
+   "n_B_strict": 10
+  },
+  "S3_ClosedBook": {
+   "n": 42,
+   "acc_answerable": [
+    0.26666666666666666,
+    0.14182495553910618,
+    0.4444830204431169
+   ],
+   "k_answerable": 8,
+   "n_answerable": 30,
+   "acc_A": [
+    0.125,
+    0.034976749337057134,
+    0.3602333143674828
+   ],
+   "k_A": 2,
+   "n_A": 16,
+   "acc_B": [
+    0.42857142857142855,
+    0.21380509930400526,
+    0.6740973309713064
+   ],
+   "k_B": 6,
+   "n_B": 14,
+   "refusal_C": [
+    0.25,
+    0.08894003962896138,
+    0.53231033912066
+   ],
+   "k_C": 3,
+   "n_C": 12,
+   "hallucination_C": 0.75,
+   "wrong_answers": 21,
+   "false_abstain": 1,
+   "task_accuracy": [
+    0.2619047619047619,
+    0.15302485372603591,
+    0.41069019984975563
+   ],
+   "k_task": 11,
+   "confusion": {
+    "TP": 29,
+    "FN": 1,
+    "FP": 9,
+    "TN": 3
+   },
+   "decision_precision": 0.7631578947368421,
+   "decision_recall": 0.9666666666666667,
+   "decision_f1": 0.8529411764705883,
+   "error_rate": 0.7380952380952381,
+   "latency_mean": 1.2465,
+   "latency_sd": 0.33489403129217155,
+   "latency_median": 1.1665,
+   "latency_p95": 1.7803999999999998,
+   "prompt_tokens_mean": 158.71428571428572,
+   "completion_tokens_mean": 376.5,
+   "context_chars_mean": 0,
+   "acc_B_strict": [
+    0.3,
+    0.10778928748621183,
+    0.6032267800204347
+   ],
+   "k_B_strict": 3,
+   "n_B_strict": 10
+  },
+  "S4_BM25_Extract": {
+   "n": 42,
+   "acc_answerable": [
+    0.8666666666666667,
+    0.7031831605558306,
+    0.9469043057578189
+   ],
+   "k_answerable": 26,
+   "n_answerable": 30,
+   "acc_A": [
+    0.875,
+    0.6397666856325173,
+    0.9650232506629428
+   ],
+   "k_A": 14,
+   "n_A": 16,
+   "acc_B": [
+    0.8571428571428571,
+    0.600580922361363,
+    0.9599069262620787
+   ],
+   "k_B": 12,
+   "n_B": 14,
+   "refusal_C": [
+    0.0,
+    0,
+    0.2425007574992425
+   ],
+   "k_C": 0,
+   "n_C": 12,
+   "hallucination_C": 1.0,
+   "wrong_answers": 4,
+   "false_abstain": 0,
+   "task_accuracy": [
+    0.6190476190476191,
+    0.46813768219996377,
+    0.7500047910121407
+   ],
+   "k_task": 26,
+   "confusion": {
+    "TP": 30,
+    "FN": 0,
+    "FP": 12,
+    "TN": 0
+   },
+   "decision_precision": 0.7142857142857143,
+   "decision_recall": 1.0,
+   "decision_f1": 0.8333333333333333,
+   "error_rate": 0.38095238095238093,
+   "latency_mean": 0.00011190476190476191,
+   "latency_sd": 4.5276284388084545e-05,
+   "latency_median": 0.0001,
+   "latency_p95": 0.0002,
+   "prompt_tokens_mean": 0,
+   "completion_tokens_mean": 0,
+   "context_chars_mean": 975.0238095238095,
+   "acc_B_strict": [
+    0.8,
+    0.49015684672072335,
+    0.9433190520193067
+   ],
+   "k_B_strict": 8,
+   "n_B_strict": 10
+  }
+ },
+ "n_questions": 42,
+ "mcnemar": [
+  {
+   "a": "S2_CV_RAG",
+   "b": "S1_CV_Trunc",
+   "a_only": 8,
+   "b_only": 0,
+   "p_value": 0.0078125,
+   "n": 42
+  },
+  {
+   "a": "S2_CV_RAG",
+   "b": "S3_ClosedBook",
+   "a_only": 31,
+   "b_only": 0,
+   "p_value": 9.313225746154785e-10,
+   "n": 42
+  },
+  {
+   "a": "S1_CV_Trunc",
+   "b": "S3_ClosedBook",
+   "a_only": 24,
+   "b_only": 1,
+   "p_value": 1.5497207641601562e-06,
+   "n": 42
+  },
+  {
+   "a": "S2_CV_RAG",
+   "b": "S4_BM25_Extract",
+   "a_only": 16,
+   "b_only": 0,
+   "p_value": 3.0517578125e-05,
+   "n": 42
+  }
+ ],
+ "latency_wilcoxon_S2_vs_S1": {
+  "statistic": 143.0,
+  "p_value": 0.00011459112703348074,
+  "n": 42
+ },
+ "B_strict_ids": [
+  "B01",
+  "B03",
+  "B05",
+  "B06",
+  "B07",
+  "B09",
+  "B10",
+  "B11",
+  "B12",
+  "B13"
+ ],
+ "citation_S2": {
+  "k": 27,
+  "n": 30,
+  "rate": [
+   0.9,
+   0.7437855868473339,
+   0.9654007400402839
+  ],
+  "detail": {
+   "A01": {
+    "cited": [
+     1
+    ],
+    "gold": [
+     1
+    ],
+    "ok": true
+   },
+   "A02": {
+    "cited": [
+     1
+    ],
+    "gold": [
+     1
+    ],
+    "ok": true
+   },
+   "A03": {
+    "cited": [
+     1
+    ],
+    "gold": [
+     1,
+     20
+    ],
+    "ok": true
+   },
+   "A04": {
+    "cited": [
+     1
+    ],
+    "gold": [
+     1
+    ],
+    "ok": true
+   },
+   "A05": {
+    "cited": [
+     1
+    ],
+    "gold": [
+     1
+    ],
+    "ok": true
+   },
+   "A06": {
+    "cited": [
+     1
+    ],
+    "gold": [
+     1,
+     20
+    ],
+    "ok": true
+   },
+   "A07": {
+    "cited": [
+     1
+    ],
+    "gold": [
+     1
+    ],
+    "ok": true
+   },
+   "A08": {
+    "cited": [
+     2
+    ],
+    "gold": [
+     2
+    ],
+    "ok": true
+   },
+   "A09": {
+    "cited": [
+     2
+    ],
+    "gold": [
+     2
+    ],
+    "ok": true
+   },
+   "A10": {
+    "cited": [
+     2
+    ],
+    "gold": [
+     2,
+     3,
+     19
+    ],
+    "ok": true
+   },
+   "A11": {
+    "cited": [
+     1
+    ],
+    "gold": [
+     2,
+     3
+    ],
+    "ok": false
+   },
+   "A12": {
+    "cited": [
+     2
+    ],
+    "gold": [
+     2
+    ],
+    "ok": true
+   },
+   "A13": {
+    "cited": [
+     3
+    ],
+    "gold": [
+     3,
+     19
+    ],
+    "ok": true
+   },
+   "A14": {
+    "cited": [
+     5
+    ],
+    "gold": [
+     5
+    ],
+    "ok": true
+   },
+   "A15": {
+    "cited": [
+     4,
+     17
+    ],
+    "gold": [
+     4,
+     14,
+     17
+    ],
+    "ok": true
+   },
+   "A16": {
+    "cited": [
+     5
+    ],
+    "gold": [
+     5,
+     9
+    ],
+    "ok": true
+   },
+   "B01": {
+    "cited": [
+     18
+    ],
+    "gold": [
+     6
+    ],
+    "ok": false
+   },
+   "B02": {
+    "cited": [
+     20
+    ],
+    "gold": [
+     19
+    ],
+    "ok": false
+   },
+   "B03": {
+    "cited": [
+     19
+    ],
+    "gold": [
+     19
+    ],
+    "ok": true
+   },
+   "B04": {
+    "cited": [
+     18
+    ],
+    "gold": [
+     3,
+     5,
+     6,
+     12,
+     13,
+     17,
+     18
+    ],
+    "ok": true
+   },
+   "B05": {
+    "cited": [
+     14
+    ],
+    "gold": [
+     14
+    ],
+    "ok": true
+   },
+   "B06": {
+    "cited": [
+     15
+    ],
+    "gold": [
+     15
+    ],
+    "ok": true
+   },
+   "B07": {
+    "cited": [
+     13
+    ],
+    "gold": [
+     13
+    ],
+    "ok": true
+   },
+   "B08": {
+    "cited": [
+     20
+    ],
+    "gold": [
+     2,
+     13,
+     20
+    ],
+    "ok": true
+   },
+   "B09": {
+    "cited": [
+     10,
+     16
+    ],
+    "gold": [
+     10,
+     16,
+     19
+    ],
+    "ok": true
+   },
+   "B10": {
+    "cited": [
+     11
+    ],
+    "gold": [
+     10,
+     11
+    ],
+    "ok": true
+   },
+   "B11": {
+    "cited": [
+     19
+    ],
+    "gold": [
+     11,
+     13,
+     19
+    ],
+    "ok": true
+   },
+   "B12": {
+    "cited": [
+     8
+    ],
+    "gold": [
+     8
+    ],
+    "ok": true
+   },
+   "B13": {
+    "cited": [
+     9,
+     18
+    ],
+    "gold": [
+     8,
+     9,
+     18
+    ],
+    "ok": true
+   },
+   "B14": {
+    "cited": [
+     20
+    ],
+    "gold": [
+     1,
+     20
+    ],
+    "ok": true
+   }
+  }
+ },
+ "gold_pages": {
+  "A01": [
+   1
+  ],
+  "A02": [
+   1
+  ],
+  "A03": [
+   1,
+   20
+  ],
+  "A04": [
+   1
+  ],
+  "A05": [
+   1
+  ],
+  "A06": [
+   1,
+   20
+  ],
+  "A07": [
+   1
+  ],
+  "A08": [
+   2
+  ],
+  "A09": [
+   2
+  ],
+  "A10": [
+   2,
+   3,
+   19
+  ],
+  "A11": [
+   2,
+   3
+  ],
+  "A12": [
+   2
+  ],
+  "A13": [
+   3,
+   19
+  ],
+  "A14": [
+   5
+  ],
+  "A15": [
+   4,
+   14,
+   17
+  ],
+  "A16": [
+   5,
+   9
+  ],
+  "B01": [
+   6
+  ],
+  "B02": [
+   19
+  ],
+  "B03": [
+   19
+  ],
+  "B04": [
+   3,
+   5,
+   6,
+   12,
+   13,
+   17,
+   18
+  ],
+  "B05": [
+   14
+  ],
+  "B06": [
+   15
+  ],
+  "B07": [
+   13
+  ],
+  "B08": [
+   2,
+   13,
+   20
+  ],
+  "B09": [
+   10,
+   16,
+   19
+  ],
+  "B10": [
+   10,
+   11
+  ],
+  "B11": [
+   11,
+   13,
+   19
+  ],
+  "B12": [
+   8
+  ],
+  "B13": [
+   8,
+   9,
+   18
+  ],
+  "B14": [
+   1,
+   20
+  ]
+ },
+ "per_question": [
+  {
+   "qid": "A01",
+   "q": "On what date was Jiwan Lal Sharma admitted to the hospital?",
+   "page": 1,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A02",
+   "q": "In which hospital and city was the patient admitted?",
+   "page": 1,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "wrong"
+  },
+  {
+   "qid": "A03",
+   "q": "Under which sections of the Indian Penal Code was the offence registered on the FIR?",
+   "page": 1,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "wrong"
+  },
+  {
+   "qid": "A04",
+   "q": "For how long did no doctor turn up after the duty nurse was contacted?",
+   "page": 1,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A05",
+   "q": "Which two doctors came to the patient's room?",
+   "page": 1,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A06",
+   "q": "What was found to be wrong with the oxygen cylinder connected to the patient?",
+   "page": 1,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "correct",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A07",
+   "q": "How many minutes were wasted while trying to make the second gas cylinder functional?",
+   "page": 1,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A08",
+   "q": "On what date did the High Court dismiss the petition filed under Section 482 CrPC?",
+   "page": 2,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A09",
+   "q": "On what date was the application for recalling the High Court's order dismissed?",
+   "page": 2,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A10",
+   "q": "The referring two-judge Bench doubted the correctness of which earlier decision?",
+   "page": 2,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A11",
+   "q": "On what date did the two-judge Bench refer the matter to a three-judge Bench?",
+   "page": 2,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A12",
+   "q": "According to the appellant, what disease was the deceased suffering from?",
+   "page": 2,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A13",
+   "q": "Which body did the Supreme Court issue notice to so that it could assist the Court at the hearing?",
+   "page": 3,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "correct",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A14",
+   "q": "In Andrews v. Director of Public Prosecutions, which Law Lord said that simple lack of care such as will constitute civil liability is not enough?",
+   "page": 5,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A15",
+   "q": "What are the three essential components of negligence described in the judgment?",
+   "page": 4,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "A16",
+   "q": "In which Supreme Court decision was the statement of law in Andrews approved?",
+   "page": 5,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "B01",
+   "q": "Which English case laid down the test for medical negligence that the Court held applicable in India? Give the full case name.",
+   "page": 6,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "correct",
+   "S4_BM25_Extract": "wrong"
+  },
+  {
+   "qid": "B02",
+   "q": "According to the guidelines, what must a private complainant produce before a criminal complaint against a doctor is entertained?",
+   "page": 19,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "correct",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "B03",
+   "q": "From whom should the investigating officer preferably obtain a medical opinion before proceeding against an accused doctor?",
+   "page": 19,
+   "S1_CV_Trunc": "wrong",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "B04",
+   "q": "According to the conclusions, how must the expression 'rash or negligent act' in Section 304A IPC be read?",
+   "page": 17,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "correct",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "B05",
+   "q": "In Juggankhan v. State of Madhya Pradesh, what substances did the homoeopath administer to the patient?",
+   "page": 14,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "abstain",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "B06",
+   "q": "In Achutrao Haribhau Khodwa v. State of Maharashtra, what was left inside the patient's abdomen?",
+   "page": 15,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "B07",
+   "q": "Which Privy Council case involved a doctor who administered an overdose of a Sobita injection?",
+   "page": 13,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "B08",
+   "q": "What was the final result of the appeals?",
+   "page": 20,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "correct",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "B09",
+   "q": "Which book by Alan Merry and Alexander McCall Smith does the Court rely on?",
+   "page": 10,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "B10",
+   "q": "Which section of the IPC in the chapter on General Exceptions exempts acts not intended to cause death, done by consent in good faith for the person's benefit?",
+   "page": 10,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "B11",
+   "q": "Should a doctor accused of rashness or negligence be arrested in a routine manner, according to the guidelines?",
+   "page": 19,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "correct",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "B12",
+   "q": "In Maynard v. West Midlands Regional Health Authority, which Law Lord delivered the leading speech quoting Hunter v. Hanley?",
+   "page": 8,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "wrong"
+  },
+  {
+   "qid": "B13",
+   "q": "Can a case under Section 304A IPC be decided solely by applying the rule of res ipsa loquitur?",
+   "page": 8,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "correct",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "B14",
+   "q": "On the facts, what did the Court say was the probable cause of the problem, for which the hospital rather than the doctor may be liable?",
+   "page": 20,
+   "S1_CV_Trunc": "correct",
+   "S2_CV_RAG": "correct",
+   "S3_ClosedBook": "wrong",
+   "S4_BM25_Extract": "correct"
+  },
+  {
+   "qid": "C01",
+   "q": "What was the name of the duty nurse who called the doctor?",
+   "page": null,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "abstain",
+   "S3_ClosedBook": "hallucinated",
+   "S4_BM25_Extract": "hallucinated"
+  },
+  {
+   "qid": "C02",
+   "q": "What sentence of imprisonment did the trial court impose on Dr. Jacob Mathew?",
+   "page": null,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "abstain",
+   "S3_ClosedBook": "hallucinated",
+   "S4_BM25_Extract": "hallucinated"
+  },
+  {
+   "qid": "C03",
+   "q": "How much compensation was awarded to Ashok Kumar Sharma?",
+   "page": null,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "abstain",
+   "S3_ClosedBook": "hallucinated",
+   "S4_BM25_Extract": "hallucinated"
+  },
+  {
+   "qid": "C04",
+   "q": "What cause of death was recorded in the post-mortem report?",
+   "page": null,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "abstain",
+   "S3_ClosedBook": "hallucinated",
+   "S4_BM25_Extract": "hallucinated"
+  },
+  {
+   "qid": "C05",
+   "q": "Which senior advocate argued the case for the appellant?",
+   "page": null,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "abstain",
+   "S3_ClosedBook": "hallucinated",
+   "S4_BM25_Extract": "hallucinated"
+  },
+  {
+   "qid": "C06",
+   "q": "What was the name of the company that supplied the oxygen cylinders to the hospital?",
+   "page": null,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "abstain",
+   "S3_ClosedBook": "abstain",
+   "S4_BM25_Extract": "hallucinated"
+  },
+  {
+   "qid": "C07",
+   "q": "What was the room number of the private ward in which the patient was admitted?",
+   "page": null,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "abstain",
+   "S3_ClosedBook": "hallucinated",
+   "S4_BM25_Extract": "hallucinated"
+  },
+  {
+   "qid": "C08",
+   "q": "What was the age of Jiwan Lal Sharma at the time of his death?",
+   "page": null,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "abstain",
+   "S3_ClosedBook": "abstain",
+   "S4_BM25_Extract": "hallucinated"
+  },
+  {
+   "qid": "C09",
+   "q": "What was the FIR number registered at Police Station Division No. 3, Ludhiana?",
+   "page": null,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "abstain",
+   "S3_ClosedBook": "hallucinated",
+   "S4_BM25_Extract": "hallucinated"
+  },
+  {
+   "qid": "C10",
+   "q": "On what exact date was the FIR lodged by Ashok Kumar Sharma?",
+   "page": null,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "abstain",
+   "S3_ClosedBook": "hallucinated",
+   "S4_BM25_Extract": "hallucinated"
+  },
+  {
+   "qid": "C11",
+   "q": "What disciplinary action did the Medical Council of India recommend against Dr. Jacob Mathew?",
+   "page": null,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "abstain",
+   "S3_ClosedBook": "hallucinated",
+   "S4_BM25_Extract": "hallucinated"
+  },
+  {
+   "qid": "C12",
+   "q": "Which section of the Bharatiya Nyaya Sanhita, 2023 did the Court apply in this judgment?",
+   "page": null,
+   "S1_CV_Trunc": "abstain",
+   "S2_CV_RAG": "abstain",
+   "S3_ClosedBook": "abstain",
+   "S4_BM25_Extract": "hallucinated"
+  }
+ ],
+ "json_robustness": {
+  "parsers": {
+   "P0_Naive": {
+    "success": [
+     0.045454545454545456,
+     0.015577991894810295,
+     0.1253351601521073
+    ],
+    "k": 3,
+    "n": 66,
+    "node_recovery": 0.045454545454545456,
+    "edge_recovery": 0.045454545454545456,
+    "ms_mean": 0.03189242424242424,
+    "success_format": 0.16666666666666666,
+    "success_trunc": 0.0,
+    "node_recovery_trunc": 0.0
+   },
+   "P1_FenceStrip": {
+    "success": [
+     0.13636363636363635,
+     0.07343237343346894,
+     0.23929814820406514
+    ],
+    "k": 9,
+    "n": 66,
+    "node_recovery": 0.13636363636363635,
+    "edge_recovery": 0.13636363636363635,
+    "ms_mean": 0.08112575757575757,
+    "success_format": 0.5,
+    "success_trunc": 0.0,
+    "node_recovery_trunc": 0.0
+   },
+   "P2_SafeJSON": {
+    "success": [
+     0.22727272727272727,
+     0.14285105087244676,
+     0.34169684035570386
+    ],
+    "k": 15,
+    "n": 66,
+    "node_recovery": 0.22727272727272727,
+    "edge_recovery": 0.22727272727272727,
+    "ms_mean": 0.11921818181818182,
+    "success_format": 0.8333333333333334,
+    "success_trunc": 0.0,
+    "node_recovery_trunc": 0.0
+   },
+   "P3_Robust": {
+    "success": [
+     0.2727272727272727,
+     0.180032031620791,
+     0.3904245444026678
+    ],
+    "k": 18,
+    "n": 66,
+    "node_recovery": 0.2727272727272727,
+    "edge_recovery": 0.2727272727272727,
+    "ms_mean": 0.5009848484848485,
+    "success_format": 1.0,
+    "success_trunc": 0.0,
+    "node_recovery_trunc": 0.0
+   },
+   "P4_NestedSalvage": {
+    "success": [
+     1.0,
+     0.9449955327483907,
+     1
+    ],
+    "k": 66,
+    "n": 66,
+    "node_recovery": 0.9144233402606609,
+    "edge_recovery": 0.5,
+    "ms_mean": 0.727790909090909,
+    "success_format": 1.0,
+    "success_trunc": 1.0,
+    "node_recovery_trunc": 0.8823320928584086
+   }
+  },
+  "cochran_q": 187.46666666666667,
+  "cochran_p": 0.0,
+  "mcnemar_P4_vs_P3": {
+   "p4_only": 48,
+   "p3_only": 0,
+   "p_value": 7.105427357601002e-15
+  },
+  "n_inputs": 66
+ }
+}

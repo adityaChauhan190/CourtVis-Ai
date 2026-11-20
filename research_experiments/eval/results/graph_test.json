@@ -1,0 +1,274 @@
+{
+ "nodes": [
+  {
+   "id": "jacob_mathew",
+   "label": "Dr. Jacob Mathew",
+   "type": "person",
+   "description": "Treating doctor accused under Section 304A IPC (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "ashok_kumar_sharma",
+   "label": "Ashok Kumar Sharma",
+   "type": "person",
+   "description": "Son of the deceased who filed the FIR (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "jiwan_lal_sharma",
+   "label": "Jiwan Lal Sharma",
+   "type": "person",
+   "description": "Patient who died in the hospital ward (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "allen_joseph",
+   "label": "Dr. Allen Joseph",
+   "type": "person",
+   "description": "Doctor who attended the patient with Dr. Mathew (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "state_of_punjab",
+   "label": "State of Punjab",
+   "type": "organization",
+   "description": "The state party prosecuting the accused (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "cmc_hospital",
+   "label": "CMC Hospital",
+   "type": "organization",
+   "description": "Location where the patient was admitted and died (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "police_station_division_no_3",
+   "label": "Police Station Division No. 3",
+   "type": "organization",
+   "description": "Station where the FIR was registered (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "supreme_court_of_india",
+   "label": "Supreme Court of India",
+   "type": "organization",
+   "description": "Court that quashed the prosecution (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "high_court",
+   "label": "High Court",
+   "type": "organization",
+   "description": "Court that dismissed the quashing petition (p. 2)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "first_information_report",
+   "label": "First Information Report",
+   "type": "evidence",
+   "description": "Document alleging carelessness and empty oxygen cylinder (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "section_304a_ipc",
+   "label": "Section 304A IPC",
+   "type": "evidence",
+   "description": "Statutory provision for death by negligence (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "bolam_s_test",
+   "label": "Bolam's Test",
+   "type": "evidence",
+   "description": "Legal standard for assessing medical negligence (p. 19)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "empty_oxygen_cylinder",
+   "label": "Empty Oxygen Cylinder",
+   "type": "fact",
+   "description": "The oxygen cylinder connected to the patient was empty (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "20_25_minute_delay",
+   "label": "20-25 Minute Delay",
+   "type": "fact",
+   "description": "No doctor turned up for 20-25 minutes after call (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "terminal_cancer_stage",
+   "label": "Terminal Cancer Stage",
+   "type": "fact",
+   "description": "Patient was suffering from advanced stage cancer (p. 2)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "22_feb_1995",
+   "label": "22 Feb 1995",
+   "type": "date",
+   "description": "Date the patient died at 11 p.m. (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  },
+  {
+   "id": "5_aug_2005",
+   "label": "5 Aug 2005",
+   "type": "date",
+   "description": "Date the Supreme Court delivered its judgment (p. 1)",
+   "document_sources": [
+    "Jacob_Mathew_vs_State_Of_Punjab_&_Anr_on_5_August,_2005.pdf"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "id": "e1",
+   "source": "ashok_kumar_sharma",
+   "target": "first_information_report",
+   "type": "filed_by",
+   "label": "filed FIR against doctors"
+  },
+  {
+   "id": "e2",
+   "source": "first_information_report",
+   "target": "police_station_division_no_3",
+   "type": "occurred_at",
+   "label": "registered at police station"
+  },
+  {
+   "id": "e3",
+   "source": "state_of_punjab",
+   "target": "jacob_mathew",
+   "type": "involved_in",
+   "label": "prosecuted under Section 304A"
+  },
+  {
+   "id": "e4",
+   "source": "jacob_mathew",
+   "target": "jiwan_lal_sharma",
+   "type": "related_to",
+   "label": "treated the deceased patient"
+  },
+  {
+   "id": "e5",
+   "source": "allen_joseph",
+   "target": "jiwan_lal_sharma",
+   "type": "related_to",
+   "label": "co-treated the deceased patient"
+  },
+  {
+   "id": "e6",
+   "source": "jiwan_lal_sharma",
+   "target": "cmc_hospital",
+   "type": "occurred_at",
+   "label": "admitted in private ward"
+  },
+  {
+   "id": "e7",
+   "source": "jiwan_lal_sharma",
+   "target": "22_feb_1995",
+   "type": "occurred_at",
+   "label": "died on this date"
+  },
+  {
+   "id": "e8",
+   "source": "empty_oxygen_cylinder",
+   "target": "first_information_report",
+   "type": "supports",
+   "label": "alleged cause of death"
+  },
+  {
+   "id": "e9",
+   "source": "20_25_minute_delay",
+   "target": "first_information_report",
+   "type": "supports",
+   "label": "alleged negligence in response"
+  },
+  {
+   "id": "e10",
+   "source": "terminal_cancer_stage",
+   "target": "empty_oxygen_cylinder",
+   "type": "contradicts",
+   "label": "death likely due to illness"
+  },
+  {
+   "id": "e11",
+   "source": "supreme_court_of_india",
+   "target": "section_304a_ipc",
+   "type": "related_to",
+   "label": "interpreted negligence standard"
+  },
+  {
+   "id": "e12",
+   "source": "supreme_court_of_india",
+   "target": "bolam_s_test",
+   "type": "related_to",
+   "label": "applied medical negligence test"
+  },
+  {
+   "id": "e13",
+   "source": "supreme_court_of_india",
+   "target": "jacob_mathew",
+   "type": "related_to",
+   "label": "quashed prosecution of accused"
+  },
+  {
+   "id": "e14",
+   "source": "high_court",
+   "target": "jacob_mathew",
+   "type": "related_to",
+   "label": "dismissed quashing petition"
+  },
+  {
+   "id": "e15",
+   "source": "supreme_court_of_india",
+   "target": "5_aug_2005",
+   "type": "occurred_at",
+   "label": "judgment delivered on this date"
+  },
+  {
+   "id": "e16",
+   "source": "empty_oxygen_cylinder",
+   "target": "section_304a_ipc",
+   "type": "contradicts",
+   "label": "no criminal negligence found"
+  }
+ ],
+ "has_documents": true,
+ "document_count": 1,
+ "merged_duplicates": 0
+}
